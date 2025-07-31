@@ -3,125 +3,370 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabarinathan P Subramaniyan - Portfolio</title>
+    <title>Sabarinathan P Subramaniyan - CV</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        /* Custom font for a clean, professional look */
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            font-family: "Inter", sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
-        header, footer {
-            background: #333;
-            color: #f4f4f4;
-            padding: 1em 0;
-            text-align: center;
+        /* Custom scrollbar for a touch of style */
+        ::-webkit-scrollbar {
+            width: 8px;
         }
-        .container {
-            width: 90%;
-            max-width: 1000px;
-            margin: auto;
-            overflow: hidden;
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
         }
-        h1, h2 {
-            color: #333;
+        ::-webkit-scrollbar-thumb {
+            background: #a0a0a0; /* Darker grey for thumb */
+            border-radius: 10px;
         }
-        section {
-            padding: 20px;
-            background: #fff;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .contact-info a {
-            color: #333;
-            text-decoration: none;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
+        ::-webkit-scrollbar-thumb:hover {
+            background: #707070; /* Even darker on hover */
         }
     </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800 p-4 sm:p-8 min-h-screen flex items-center justify-center">
+    <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-6 sm:p-10 border border-gray-100">
 
-<header>
-    <h1>Sabarinathan P Subramaniyan</h1>
-    <p>Ph.D. in Mechanical Engineering</p>
-</header>
+        <!-- Header Section -->
+        <header class="text-center mb-12 relative">
+            <!-- Profile Picture -->
+            <div class="mb-6">
+                <img src="63568_vg15351693c00-0.jpg" alt="Sabarinathan P Subramaniyan" class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-gray-200 shadow-md">
+            </div>
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-2 leading-tight">Sabarinathan P Subramaniyan</h1>
+            <p class="text-lg sm:text-xl text-gray-600 font-medium mb-4">Researcher | Polymer Composites | AI & Data Science</p>
+            <div class="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-3 text-gray-600 text-base sm:text-lg">
+                <a href="mailto:sabarisvh@gmail.com" class="flex items-center hover:text-blue-600 transition duration-300 transform hover:scale-105">
+                    <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                    sabarisvh@gmail.com
+                </a>
+                <span class="hidden sm:inline text-gray-300">|</span>
+                <a href="tel:+16823311690" class="flex items-center hover:text-blue-600 transition duration-300 transform hover:scale-105">
+                    <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                    +1 (682) 331-1690
+                </a>
+                <span class="hidden sm:inline text-gray-300">|</span>
+                <a href="https://scholar.google.com/citations?user=your_google_scholar_id" target="_blank" class="flex items-center hover:text-blue-600 transition duration-300 transform hover:scale-105" rel="noopener noreferrer">
+                    <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM8.707 9.293a1 1 0 00-1.414 1.414L8.586 12l-1.293 1.293a1 1 0 101.414 1.414L10 13.414l1.293 1.293a1 1 0 001.414-1.414L11.414 12l1.293-1.293a1 1 0 00-1.414-1.414L10 10.586 8.707 9.293z" clip-rule="evenodd"></path></svg>
+                    Google Scholar
+                </a>
+                <span class="hidden sm:inline text-gray-300">|</span>
+                <a href="https://orcid.org/your_orcid_id" target="_blank" class="flex items-center hover:text-blue-600 transition duration-300 transform hover:scale-105" rel="noopener noreferrer">
+                    <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM8.707 9.293a1 1 0 00-1.414 1.414L8.586 12l-1.293 1.293a1 1 0 101.414 1.414L10 13.414l1.293 1.293a1 1 0 001.414-1.414L11.414 12l1.293-1.293a1 1 0 00-1.414-1.414L10 10.586 8.707 9.293z" clip-rule="evenodd"></path></svg>
+                    ORCID
+                </a>
+                <span class="hidden sm:inline text-gray-300">|</span>
+                <a href="https://linkedin.com/in/sabarinathan-subramaniyan" target="_blank" class="flex items-center hover:text-blue-600 transition duration-300 transform hover:scale-105" rel="noopener noreferrer">
+                    <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.3 5.6c.3-.3.6-.5.9-.6.3-.1.6-.1.9 0 .3.1.5.3.6.6.1.3.1.6 0 .9-.1.3-.3.5-.6.6-.3.1-.6.1-.9 0-.3-.1-.5-.3-.6-.6-.1-.3-.1-.6 0-.9zM18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 00-1 1v4a1 1 0 001 1h2a1 1 0 001-1V9a1 1 0 00-1-1H7zM4 9a1 1 0 00-1 1v3a1 1 0 001 1h1a1 1 0 001-1v-3a1 1 0 00-1-1H4z" clip-rule="evenodd"></path></svg>
+                    LinkedIn
+                </a>
+            </div>
+        </header>
 
-<div class="container">
-    
-    <section class="contact-info">
-        <h2>Contact Information</h2>
-        <p>Tel: (682) 331-1690 | Email: <a href="mailto:sabarisvh@gmail.com">sabarisvh@gmail.com</a></p>
-        <p><a href="#">LinkedIn</a> | <a href="#">Google Scholar</a> | <a href="#">ORCID</a></p>
-    </section>
-    
-    <section class="education">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Ph.D. Mechanical Engineering</strong>, University of Wisconsin-Madison, USA (August 2023)</li>
-            <p>Thesis: “Impact of Architecture on the Durability of Polymer Composite Materials in Hygrothermal Environments”</p>
-            <li><strong>MS Mechanical Engineering</strong>, University of Texas at Arlington, USA (August 2019)</li>
-            <p>Thesis: “Effect of Sulfur-Porous Carbon Cathode Morphology on the Discharge Process in Lithium-Sulfur Battery”</p>
-            <li><strong>BE in Mechanical Engineering</strong>, Anna University, India (May 2015)</li>
-        </ul>
-    </section>
+        <!-- Summary Section -->
+        <section class="mb-10 py-6 border-b border-gray-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Summary</h2>
+            <p class="text-base leading-relaxed text-gray-700">
+                Researcher with 7+ years of interdisciplinary experience in polymer composites, material characterization, and finite element
+                modeling. Expert in integrating experimental methods with computational tools and AI to accelerate materials research
+                and predictive modeling. Proven track record in publications, technical leadership, and collaborative innovation. Passionate
+                about applying data science to enhance material performance and solve complex engineering challenges.
+            </p>
+        </section>
 
-    <section class="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li><strong>Senior Research Engineer</strong>, Automotive and Aerospace Solutions Division (AASD) (September 2023 – Present)
-                <ul>
-                    <li>Led projects for Thermal Runaway Barrier materials, focusing on mechanical and thermal performance.</li>
-                    <li>Developed finite element models to optimize composite material designs.</li>
-                    <li>Filed patents for innovative material solutions.</li>
+        <!-- Education Section -->
+        <section class="mb-10 py-6 border-b border-gray-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Education</h2>
+            <div class="space-y-6">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900">PhD in Mechanical Engineering</h3>
+                        <p class="text-base text-gray-600">University of Wisconsin Madison, Wisconsin, USA</p>
+                    </div>
+                    <p class="text-sm text-gray-500 sm:mt-0 mt-1">August, 2023</p>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900">MS in Mechanical Engineering</h3>
+                        <p class="text-base text-gray-600">University of Texas at Arlington, Texas, USA</p>
+                    </div>
+                    <p class="text-sm text-gray-500 sm:mt-0 mt-1">August, 2019</p>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900">Bachelors in Mechanical Engineering</h3>
+                        <p class="text-base text-gray-600">Anna University, Tamil Nadu, India</p>
+                    </div>
+                    <p class="text-sm text-gray-500 sm:mt-0 mt-1">May, 2015</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="mb-10 py-6 border-b border-gray-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Experience</h2>
+            <div class="space-y-8">
+                <div class="relative pl-6 border-l-2 border-blue-400">
+                    <div class="absolute -left-2 top-0 w-4 h-4 bg-blue-400 rounded-full"></div>
+                    <h3 class="text-lg font-semibold text-gray-900">Senior Research Engineer, 3M - Advanced Materials and Transportation Product Platform</h3>
+                    <p class="text-base text-gray-600 mb-2">Saint Paul - MN, USA | August 2023 - Present</p>
+                    <ul class="list-disc list-inside text-base text-gray-700 space-y-1 pl-4">
+                        <li>Assessed long-term reliability of battery cushioning foams via stress relaxation testing under thermal expansion-induced stress, supporting material selection and durability prediction.</li>
+                        <li>Developed advanced material models including finite strain viscoelasticity and cohesive zone models for pressure-sensitive, structural, and other 3M adhesives, leveraging experimental data to accurately simulate mechanical behavior and predict failure under complex loading conditions.</li>
+                        <li>Modeling the durability of paint protection polymer films subjected to UV, thermal, and moisture aging by applying data-driven approaches to accelerated weathering data, enabling accurate prediction of degradation trends and enhancing material reliability.</li>
+                        <li>Engineered advanced characterization techniques and finite element simulations to evaluate the thermal and mechanical response of polymers and composites, supporting design optimization and enhancing material reliability.</li>
+                        <li>Collaborated with cross-functional teams and product developers to create resilient materials and novel characterization methods, filing invention disclosures for both.</li>
+                        <li>Coordinated with lab technicians to delegate high-volume mechanical and thermal testing, providing technical instructions to ensure proper execution and adherence to standard procedures.</li>
+                        <li>Part of a team creating AI integration strategies for our product platform, leading workshops to upskill co-workers on AI trends and its responsible use for productivity.</li>
+                        <li>Presented research findings and project results to clients, effectively translating complex technical data into clear, actionable insights to support product development and strategic decision-making.</li>
+                    </ul>
+                </div>
+                <div class="relative pl-6 border-l-2 border-blue-400">
+                    <div class="absolute -left-2 top-0 w-4 h-4 bg-blue-400 rounded-full"></div>
+                    <h3 class="text-lg font-semibold text-gray-900">Research Assistant, UW-Madison, Prabhakar Research Group</h3>
+                    <p class="text-base text-gray-600 mb-2">Madison WI, USA | September 2019 - August 2023</p>
+                    <ul class="list-disc list-inside text-base text-gray-700 space-y-1 pl-4">
+                        <li>Analyzed failure mechanisms in elastomeric composite foams using DMA, focusing on filler effects and filler-matrix bonding from $-40^{\circ}C$ to $120^{\circ}C$.</li>
+                        <li>Conducted chemical (ATR-FTIR) and thermal (TGA, DSC) analysis of Thermoplastic Polyurethane (TPU) to assess microstructural degradation under moisture and temperature exposure.</li>
+                        <li>Investigated moisture-induced property changes in glass microballoon-reinforced TPU, correlating uptake with thermal (LFA) and dielectric (BbDS) behavior in collaboration with UT Arlington.</li>
+                        <li>Performed TGA under varying atmospheres and heating rates; developed kinetic models to predict TPU service life and long-term thermal stability.</li>
+                        <li>Evaluated seawater-induced degradation in epoxy and Carbon fiber reinforced polymer composites (CFRP) by quantifying nanoscale mechanical property changes using nanoindentation and nano-DMA, identifying mechanical degradation and crack initiation.</li>
+                        <li>Implemented computational modeling techniques to predict moisture transport and mechanical characteristics of micro/meso-scale composites.</li>
+                        <li>Conducted in-depth analysis of material behavior under extreme conditions through systematic data collection, identifying performance limitations and failure mechanisms, and disseminated findings through peer-reviewed publications, research reports, and technical presentations.</li>
+                        <li>Mentored graduate and undergraduate students, fostering their interest and development in composite materials through guidance on research projects and experimental techniques.</li>
+                        <li>Served as Lab Manager, ensuring adherence to all safety protocols, maintaining accurate chemical inventories, conducting periodic equipment checks, and providing comprehensive training to lab users.</li>
+                        <li>Collaborated with professor in proposal writing, contributing to the development of research proposals and securing funding for engineering projects.</li>
+                    </ul>
+                </div>
+                <div class="relative pl-6 border-l-2 border-blue-400">
+                    <div class="absolute -left-2 top-0 w-4 h-4 bg-blue-400 rounded-full"></div>
+                    <h3 class="text-lg font-semibold text-gray-900">Research Assistant, University of Texas at Arlington Research Institute</h3>
+                    <p class="text-base text-gray-600 mb-2">Fort worth TX, USA | January 2018 - August 2019</p>
+                    <ul class="list-disc list-inside text-base text-gray-700 space-y-1 pl-4">
+                        <li>Utilized dielectric spectroscopy to test and characterize glass fiber reinforced epoxy composites, enabling accurate predictions of material end-of-life and improving reliability in applications.</li>
+                        <li>Developed and validated continuum and pore-scale models of lithium-sulfur batteries, integrating electrochemical and precipitation effects to optimize cathode design through parametric studies on surface area and porosity.</li>
+                        <li>Utilized finite element analysis (FEA) to assess the impact of nuclear waste radiation on cesium-reinforced hollandite matrix, identifying strategies to enhance material resistance and ensure safety.</li>
+                        <li>Mentored undergraduate students in Multiphysics modeling of composite materials, fostering their technical growth and contributing to successful research outcomes.</li>
+                    </ul>
+                </div>
+                <div class="relative pl-6 border-l-2 border-blue-400">
+                    <div class="absolute -left-2 top-0 w-4 h-4 bg-blue-400 rounded-full"></div>
+                    <h3 class="text-lg font-semibold text-gray-900">Engineer Trainee, Aamstech solutions Aluminum die casting industry</h3>
+                    <p class="text-base text-gray-600 mb-2">Coimbatore TN, India | January 2016 - March 2017</p>
+                    <ul class="list-disc list-inside text-base text-gray-700 space-y-1 pl-4">
+                        <li>Assisted in failure analysis of aluminum die-cast locomotive engine cases by identifying root causes and supporting recommendations to improve component reliability and performance.</li>
+                        <li>Performed and ensured critical pre-casting procedures such as degassing and die preheating to minimize porosity and enhance molten aluminum flowability, contributing to improved casting quality and process efficiency.</li>
+                        <li>Supported leak testing of locomotive engine manifolds to ensure integrity and identify potential defects impacting performance.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills & Expertise Section -->
+        <section class="mb-10 py-6 border-b border-gray-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Technical Skills & Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Mechanical Testing</h3>
+                    <ul class="list-disc list-inside text-base text-gray-700 space-y-1 pl-4">
+                        <li>Universal Testing Machine Operation & Programming</li>
+                        <li>Dynamic Mechanical Analysis (DMA)</li>
+                        <li>Atomic Force Microscopy (AFM)</li>
+                        <li>Nano-indentation, Fatigue Testing, Creep Testing</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Material Characterization</h3>
+                    <ul class="list-disc list-inside text-base text-gray-700 space-y-1 pl-4">
+                        <li>Fourier Transform Infrared Spectroscopy (FTIR)</li>
+                        <li>Broadband Dielectric Spectroscopy (BbDS)</li>
+                        <li>Digital Scanning Calorimetry (DSC)</li>
+                        <li>Thermogravimetric Analysis (TGA)</li>
+                        <li>Laser Flash Analysis (LFA)</li>
+                        <li>Raman Imaging Microscope, Scanning Electron Microscope (SEM)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Manufacturing</h3>
+                    <ul class="list-disc list-inside text-base text-gray-700 space-y-1 pl-4">
+                        <li>Compression molding, Vacuum Assisted Resin Transfer molding (VARTM)</li>
+                        <li>Selective laser Sintering (SLS), Fused Filament Fabrication (FFF)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Environmental Degradation Analysis</h3>
+                    <ul class="list-disc list-inside text-base text-gray-700 space-y-1 pl-4">
+                        <li>UV, thermal, and chemical aging</li>
+                        <li>Accelerated weathering tests, natural exposure studies</li>
+                        <li>Material stabilization, degradation rate modeling</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Finite Element Modeling</h3>
+                    <ul class="list-disc list-inside text-base text-gray-700 space-y-1 pl-4">
+                        <li>COMSOL Multiphysics, ABAQUS (including user-defined subroutines)</li>
+                        <li>Ansys, SolidWorks Simulation; model development, validation, and post-processing</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Data Science</h3>
+                    <ul class="list-disc list-inside text-base text-gray-700 space-y-1 pl-4">
+                        <li>Python (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn)</li>
+                        <li>Statistical modeling, machine learning for material property prediction and degradation analysis</li>
+                        <li>Data cleaning, and visualization</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">CAD Tools</h3>
+                    <ul class="list-disc list-inside text-base text-gray-700 space-y-1 pl-4">
+                        <li>SolidWorks, CATIA V5, PTC Creo, Autodesk Fusion 360 (3D modeling, assembly, and drafting)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Highlights Section with Graphs -->
+        <section class="mb-10 py-6 border-b border-gray-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Research Highlights</h2>
+            <div class="grid grid-cols-1 gap-8">
+                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 flex flex-col items-center">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2 text-center">Moisture-Driven Morphology Changes in TPU-Based Syntactic Foams</h3>
+                    <img src="Aging_morphology_change.jpg" alt="Moisture-Driven Morphology Change Diagram" class="w-full h-auto rounded-lg shadow-sm mb-2">
+                    <p class="text-sm text-gray-600 text-center">
+                        Illustration of how moisture exposure leads to changes in polymer morphology over time,
+                        affecting hydrogen bonds, segment agglomeration, and phase mixing, impacting thermal and dielectric properties.
+                    </p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 flex flex-col items-center">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2 text-center">Multiscale Modeling of Fiber-Reinforced Composites</h3>
+                    <img src="Screen Shot 2022-06-06 at 7.10.59 PM.jpg" alt="Multiscale Modeling of Composites" class="w-full h-auto rounded-lg shadow-sm mb-2">
+                    <p class="text-sm text-gray-600 text-center">
+                        Depiction of multiscale modeling approaches for composites, showing microscale, mesoscale, and macroscale analyses,
+                        including effective diffusivity and tortuosity relationships in fiber-reinforced materials.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section class="mb-10 py-6 border-b border-gray-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Publications & Presentations</h2>
+            <div class="space-y-6">
+                <h3 class="text-lg font-semibold text-gray-900">Journal Publications</h3>
+                <ul class="list-disc list-inside text-base text-gray-700 space-y-2 pl-4">
+                    <li>Subramaniyan, S.P., Das, P.P., Raihan, R. and Prabhakar, P., 2025. Moisture-Driven Morphology Changes in the Thermal and Dielectric Properties of TPU-Based Syntactic Foams. Polymers, 17(5), p.691. IF: 4.7. CiteScore: 8.0</li>
+                    <li>Feng, H., Subramaniyan, S.P., Tewani, H. and Prabhakar, P., 2024. Physics-Constrained Neural Network for design and feature-based optimization of weave architectures. Composites Part A: Applied Science and Manufacturing, 187, p.108465. IF: 8.1, CiteScore: 15.2</li>
+                    <li>Subramaniyan, S.P. and Prabhakar, P., 2023. Moisture-driven degradation mechanisms in the viscoelastic properties of TPU-Based syntactic foams. Polymer Degradation and Stability, 218, p.110547. IF: 6.3, CiteScore: 10.1</li>
+                    <li>Prabhakar, P., Feng, H., Subramaniyan, S.P. and Doddamani, M., 2022. Densification mechanics of polymeric syntactic foams. Composites Part B: Engineering, 232, p.109597. IF: 12.7, CiteScore: 24.4</li>
+                    <li>Subramaniyan, S.P., Imam, M.A. and Prabhakar, P., 2021. Fiber packing and morphology driven moisture diffusion mechanics in reinforced composites. Composites Part B: Engineering, 226, p.109259. IF: 12.7, CiteScore: 24.4</li>
                 </ul>
-            </li>
-            <li><strong>Graduate Research Assistant</strong>, UW-Madison (September 2019 – August 2023)
-                <ul>
-                    <li>Developed multiscale finite element models for fiber-reinforced composites.</li>
-                    <li>Conducted thermal, chemical, and morphological characterization of composites.</li>
+
+                <h3 class="text-lg font-semibold text-gray-900 mt-6">Conference Proceedings</h3>
+                <ul class="list-disc list-inside text-base text-gray-700 space-y-2 pl-4">
+                    <li>Subramaniyan, S.P. and Prabhakar, P. (2022). Moisture Influence on Viscoelastic and Thermal Properties of Additively Manufactured Syntactic Foams. In Proceedings of the American Society for Composites - Thirty-Sixth Technical Conference on Composite Materials.</li>
+                    <li>Feng, H., Subramaniyan, S.P. and Prabhakar, P. (2022). Deep Learning Framework for Woven Composite Design and Optimization. In Proceedings of the American Society for Composites Thirty-Sixth Technical Conference on Composite Materials.</li>
+                    <li>Feng, H., Subramaniyan, S.P. and Prabhakar, P. (2021). Deep learning framework for woven composite analysis. In Proceedings of the American Society for Composites Thirty-Sixth Technical Conference on Composite Materials.</li>
+                    <li>Prabhakar, P., Damodaran, V., and Subramaniyan, S.P. (2021). ONR Review: Architected Composites for Damage Tolerance in Extreme Conditions. In Proceedings of the American Society for Composites Thirty-Sixth Technical Conference on Composite Materials.</li>
+                    <li>Subramaniyan, S.P., Imam, M. A., and Prabhakar, P. (2020). Effect of Fiber Packing on Moisture Diffusivity and Tortuosity in Fiber Reinforced Composites. In Proceedings of the American Society for Composites Thirty-fifth Technical Conference.</li>
                 </ul>
-            </li>
-        </ul>
-    </section>
 
-    <section class="publications">
-        <h2>Journal Publications</h2>
-        <ul>
-            <li>Sabarinathan P Subramaniyan, M.A. Imam, P. Prabhakar, "Fiber Packing and Morphology Driven Moisture Diffusion Mechanics in Reinforced Composites", <em>Composites Part B: Engineering</em>, 2021.</li>
-            <li>Pavana Prabhakar, Haotian Feng, Sabarinathan P Subramaniyan, Mrityunjay Doddamani, "Densification Mechanics of Polymeric Syntactic Foams", <em>Composites Part B: Engineering</em>, 2022.</li>
-        </ul>
-    </section>
+                <h3 class="text-lg font-semibold text-gray-900 mt-6">Dissertation & Thesis</h3>
+                <ul class="list-disc list-inside text-base text-gray-700 space-y-2 pl-4">
+                    <li>Subramaniyan, S. P. Impact of Architecture on the Durability of Polymer Composite Materials in Hygrothermal Environments. The University of Wisconsin-Madison. Doctoral Dissertation (2023) | Advisor: Prof. Pavana Prabhakar</li>
+                    <li>Subramaniyan, S. P. Effect of Sulfur-Porous Carbon Cathode Morphology on the Discharge Process in Lithium-Sulfur Battery. The University of Texas at Arlington. Master's thesis (2019) | Advisor: Prof. Kenneth Reifsnider</li>
+                </ul>
 
-    <section class="conferences">
-        <h2>Conferences</h2>
-        <ul>
-            <li>American Society for Composites 37th Technical Conference, Arizona, 2022: "Moisture influence on viscoelastic and thermal properties of syntactic foams"</li>
-            <li>American Society for Composites 36th Technical Conference, Texas, 2021: "Deep Learning Framework for Woven Composite Design and Optimization"</li>
-        </ul>
-    </section>
+                <h3 class="text-lg font-semibold text-gray-900 mt-6">Talks & Presentations</h3>
+                <ul class="list-disc list-inside text-base text-gray-700 space-y-2 pl-4">
+                    <li>"Understanding the Thermal Transport Phenomena in Architected Fiber-Reinforced Composites" at American Society for Composites 38th Technical Conference, Woburn, Massachusetts, 2023.</li>
+                    <li>"Effect of Moisture Diffusion on Polymer Composite Degradation", at 3M/UW SPE Exchange, 2020.</li>
+                </ul>
+            </div>
+        </section>
 
-    <section class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Programming Languages:</strong> Python, Fortran, C++, MATLAB</li>
-            <li><strong>Design Tools:</strong> SolidWorks, Catia V5, PTC Creo 2.0, Autodesk Fusion</li>
-            <li><strong>Analysis Tools:</strong> COMSOL, ABAQUS, Ansys</li>
-            <li><strong>Manufacturing:</strong> Compression molding, Vacuum Assisted Resin Transfer molding</li>
-        </ul>
-    </section>
-</div>
+        <!-- Certifications Section -->
+        <section class="mb-10 py-6 border-b border-gray-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Certifications</h2>
+            <ul class="list-disc list-inside text-base text-gray-700 space-y-2 pl-4">
+                <li>Professional Certificate in Generative AI for Everyone by IBM
+                    <ul class="list-circle list-inside ml-4">
+                        <li>Models and Platforms for Generative AI</li>
+                        <li>Introduction to Prompt Engineering</li>
+                        <li>Introduction to Generative AI</li>
+                        <li>Impact, Ethics, and Issues with Generative AI</li>
+                        <li>Elevating Businesses and Careers with Generative AI</li>
+                    </ul>
+                </li>
+                <li>Intro to Digital Manufacturing with Autodesk Fusion 360</li>
+                <li>Autodesk Fusion 360 Integrated CAD/CAM/CAE</li>
+                <li>Diploma in Product Design and Analysis</li>
+                <li>Programming for Everybody (Getting Started with Python)- University of Michigan Ann Arbor</li>
+            </ul>
+        </section>
 
-<footer>
-    <p>&copy; 2023 Sabarinathan P Subramaniyan. All rights reserved.</p>
-</footer>
+        <!-- Professional Services Section -->
+        <section class="mb-10 py-6 border-b border-gray-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Professional Services</h2>
+            <ul class="list-disc list-inside text-base text-gray-700 space-y-2 pl-4">
+                <li>Category Chair for Design, Analysis and Simulation Track at CAMX 2023 (Composites and Advanced Materials Expo), held in Atlanta Georgia, USA, October 30 - November 2, 2023.</li>
+                <li>Category Chair for Advances in Materials Track at CAMX 2025 (Composites and Advanced Materials Expo), will be held in Orlando Florida, USA, September 8-11, 2025.</li>
+                <li>Peer Reviewer:
+                    <ul class="list-circle list-inside ml-4">
+                        <li>Composites Part B: Engineering</li>
+                        <li>Polymers</li>
+                        <li>International Journal of Fatigue</li>
+                        <li>Journal of Applied Polymer Science</li>
+                        <li>Journal of Composite Materials</li>
+                        <li>Batteries</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
 
+        <!-- Awards Section -->
+        <section class="mb-10 py-6 border-b border-gray-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Awards</h2>
+            <ul class="list-disc list-inside text-base text-gray-700 space-y-2 pl-4">
+                <li>Student Simulation Competition 1st Prize for "Machine learning application to design co-cure processing of energy-efficient honeycomb sandwich composite structures.", at American Society for Composites 36th Technical Conference, College Station, Texas, 2021.</li>
+            </ul>
+        </section>
+
+        <!-- Teaching Experience Section -->
+        <section class="mb-10 py-6 border-b border-gray-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Teaching Experience</h2>
+            <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                <h3 class="text-lg font-semibold text-gray-900">ME 331 Computer-Aided-Engineering</h3>
+                <p class="text-base text-gray-600 mb-1">Fall 2022 & Spring 2023</p>
+                <p class="text-base text-gray-700">Led and instructed two lab sections, guiding 160 students in advanced modeling techniques and numerical simulations. Provided hands-on learning and personalized support to enhance understanding of industry-relevant engineering tools.</p>
+            </div>
+        </section>
+
+        <!-- Professional Organizations Section -->
+        <section class="mb-10 py-6 border-b border-gray-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Professional Organizations</h2>
+            <ul class="list-disc list-inside text-base text-gray-700 space-y-2 pl-4">
+                <li>American Society of Composites</li>
+                <li>Society for the Advancement of Material and Process Engineering</li>
+                <li>American Society for Mechanical Engineers</li>
+                <li>Society of Plastics Engineers</li>
+            </ul>
+        </section>
+
+        <!-- Link to PDF CV -->
+        <section class="text-center mt-12 py-6">
+            <p class="text-lg text-gray-700 mb-4">
+                For a comprehensive overview of my qualifications, you can download my full CV:
+            </p>
+            <a href="Sabari_CV_final_version.pdf" download class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-md transition duration-300 transform hover:scale-105">
+                Download My CV (PDF)
+            </a>
+        </section>
+    </div>
 </body>
 </html>
